@@ -4,7 +4,7 @@ module.exports = {
     es2021: true,
   },
   parser: '@babel/eslint-parser',
-  extends: ['airbnb-base', 'prettier'],
+  extends: ['airbnb-base', 'prettier', "react-app"],
   parserOptions: {
     ecmaVersion: 2021,
     sourceType: 'module',
@@ -13,6 +13,6 @@ module.exports = {
   },
   plugins: [],
   rules: {
-    "no-unused-vars": false
+    "no-unused-vars": 0
   },
 };
