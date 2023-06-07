@@ -9,7 +9,10 @@ module.exports = {
     ecmaVersion: 2021,
     sourceType: 'module',
     requireConfigFile: false,
+
   },
   plugins: [],
-  rules: {},
+  rules: {
+    "no-unused-vars": false
+  },
 };
