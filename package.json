@@ -1,51 +1,34 @@
 {
-  "name": "portfolio-sample",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "framer-motion": "^10.12.16",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.11.2",
-    "react-scripts": "5.0.1",
-    "react-useanimations": "^2.10.0",
-    "styled-components": "^5.3.11",
-    "web-vitals": "^2.1.4"
-  },
+  "name": "animation-practice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "",
+  "license": "MIT",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "test": "yarn run cypress open",
+    "prod": "webpack serve --mode=production",
+    "dev": "webpack serve --mode=development",
+    "build": "webpack --mode=production"
   },
   "devDependencies": {
-    "craco": "^0.0.3",
-    "craco-alias": "^3.0.1",
+    "@babel/core": "^7.14.0",
+    "@babel/eslint-parser": "^7.13.14",
+    "@babel/preset-env": "^7.14.1",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.4",
     "eslint": "^7.26.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.22.1",
-    "prettier": "^2.8.8"
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "prettier": "^2.3.0",
+    "webpack": "^5.37.0",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "lottie-web": "^5.12.1"
   }
 }

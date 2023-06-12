@@ -1,0 +1,65 @@
+#hamburger-wrapper {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  padding-top: 1.1rem;
+  cursor: pointer;
+}
+
+.burger {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.burger,
+.burger:before,
+.burger:after {
+  padding: 0;
+  background-color: black;
+  width: 100%;
+  height: 5px;
+  transition: margin 0.1s 0.2s, transform 0.2s;
+}
+
+.burger:before,
+.burger:after {
+  margin: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.burger:before {
+  margin-top: -8px;
+}
+
+.burger:after {
+  margin-top: 8px;
+}
+
+/* STYLES FOR OUR BURGER WHEN THE MENU OPENS */
+.open .burger {
+  transform: rotate(45deg);
+}
+
+.open .burger,
+.open .burger:before,
+.open .burger:after {
+  transition: margin 0.2s, transform 0.1s 0.2s;
+}
+
+.open .burger:before,
+.open .burger:after {
+  margin-top: 0;
+}
+
+.open .burger:after {
+  transform: rotate(-90deg);
+}

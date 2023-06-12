@@ -1,16 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
+import "./css/index.css";
+import Header from "./Header.js";
+import Lottie from "./Lottie.js";
 
-import App from './App';
 
-const rootNode = document.getElementById('root');
-const root = ReactDOM.createRoot(rootNode);
-
-root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </React.StrictMode>,
-);
+new Header();
+new Lottie();
