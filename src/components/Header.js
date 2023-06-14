@@ -1,4 +1,5 @@
 import Hamburger from './Hamburger.js';
+import { $ } from '../utils/querySelector.js';
 
 class Header {
   constructor() {

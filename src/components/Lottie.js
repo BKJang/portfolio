@@ -1,7 +1,7 @@
 
 
 import bodymovin from "lottie-web";
-import animationJson from "./static/lottie/sample.json";
+import animationJson from "../static/lottie/sample.json";
 
 
 

@@ -8,12 +8,14 @@
   padding: 0;
   padding-top: 1.1rem;
   cursor: pointer;
+  background: transparent;
 }
 
 .burger {
   position: relative;
   margin-left: auto;
   margin-right: auto;
+  z-index: 999;
 }
 
 .burger,
@@ -29,7 +31,7 @@
 .burger:before,
 .burger:after {
   margin: 0;
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -62,4 +64,30 @@
 
 .open .burger:after {
   transform: rotate(-90deg);
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: darkblue;
+  transition: right 0.3s ease;
+}
+
+.open {
+  right: 0; /* Slide out to the right */
+}
+
+.menu-items {
+  padding: 20px;
+  list-style: none;
+  font-size: 40px;
+  margin-left: 20px;
+  color: yellow;
+}
+
+.menu-items li {
+  margin-bottom: 10px;
 }

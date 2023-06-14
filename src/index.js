@@ -1,7 +1,7 @@
+import App from './App.js';
 import "./css/index.css";
-import Header from "./Header.js";
-import Lottie from "./Lottie.js";
+import { $ } from './utils/querySelector';
 
-
-new Header();
-new Lottie();
+window.addEventListener('DOMContentLoaded', function (e) {
+  new App($("#app"))
+})

@@ -7,19 +7,29 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="APP">
+    <div class="App">
       <div class="header_box">
-        <a href="/">
+        <a href="/contact">
           <img src="./src/static/images/logo.svg" alt="logo" />
           <div style="font-size: 14px">Portfolio</div>
         </a>
         <div id="hamburger-wrapper" class="">
           <p class="burger"></p>
         </div>
+        <div class="menu">
+          <ul class="menu-items">
+            <!-- http://localhost:5050/ -->
+            <li><a href="/">Home</a></li>
+            <!-- http://localhost:5050/work -->
+            <li><a href="/work">Work</a></li>
+            <!-- http://localhost:5050/contact -->
+            <li><a href="/contact">Contact</a></li>
+            <!-- http://localhost:5050/test -->
+            <li><a href="/test">Test</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="main_box">
-        <div id="lottie_sample"></div>
-      </div>
+      <div id="app"></div>
     </div>
   </body>
 </html>
