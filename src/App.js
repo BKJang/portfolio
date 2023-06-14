@@ -3,6 +3,8 @@ import { $ } from "./utils/querySelector";
 import { BASE_URL } from "./constants/routeInfo";
 import Router from "./router";
 import Header from "./components/Header.js";
+import Footer from "./components/Footer.js";
+import Lottie from './components/Lottie.js';
 
 
 function App($container) {
@@ -20,6 +22,9 @@ function App($container) {
 
     new Router($container);
     new Header();
+    new Footer();
+    new Lottie();
+
   };
 
   init();

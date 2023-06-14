@@ -7,17 +7,21 @@ import animationJson from "../static/lottie/sample.json";
 
 class Lottie {
   constructor() {
-
-    this.animation = bodymovin.loadAnimation({
-      container: document.getElementById("lottie_sample"),
+    const target = document.getElementById("lottie_sample");
+    const animation = bodymovin.loadAnimation({
+      container: target,
       renderer: "svg",
-      loop: true,
+      loop: false,
       autoplay: true,
       animationData: animationJson
     });
 
-    // this.animation.setDirection(1);
-    // this.animation.play();
+    target.addEventListener('click', function () {
+      console.log(animation);
+      animation.setDirection(-1);
+      animation.playSegments([0, 200], false);
+
+    })
   }
 }
 

@@ -16,7 +16,6 @@ function Contact($container) {
     `;
   };
 
-  new Lottie();
   this.render();
 }
 
