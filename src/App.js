@@ -11,6 +11,7 @@ function App($container) {
   this.$container = $container;
 
   const init = () => {
+
     $(".menu-items").addEventListener("click", (e) => {
       const target = e.target.closest("a");
       if (!(target instanceof HTMLAnchorElement)) return;
@@ -24,7 +25,6 @@ function App($container) {
     new Header();
     new Footer();
     new Lottie();
-
   };
 
   init();

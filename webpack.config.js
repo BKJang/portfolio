@@ -15,6 +15,7 @@ module.exports = (_, argv) => {
     devServer: {
       port: 5050,
       hot: true,
+      historyApiFallback: true,
     },
     devtool: isDevelopment ? 'eval-source-map' : 'source-map',
     module: {
