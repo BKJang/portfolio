@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   padding-top: 1.1rem;
+  margin-right: 20px;
   cursor: pointer;
   background: transparent;
 }
@@ -69,10 +70,10 @@
 .menu {
   position: fixed;
   top: 0;
-  right: -300px;
+  right: -300px; /* Initial position */
   width: 300px;
   height: 100%;
-  background-color: darkblue;
+  background-color: #fff;
   transition: right 0.3s ease;
 }
 
@@ -82,12 +83,77 @@
 
 .menu-items {
   padding: 20px;
-  list-style: none;
-  font-size: 40px;
-  margin-left: 20px;
-  color: yellow;
 }
 
 .menu-items li {
   margin-bottom: 10px;
+}
+
+/* ----------- */
+.menu-items {
+  text-align: center;
+}
+
+.menu-items li {
+  margin-top: 25px;
+}
+
+.menu-items a {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.4;
+  overflow: hidden;
+  color: black;
+}
+
+.menu-items .outer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: yellow;
+  transform: translateX(-100%);
+}
+
+.menu-items .inner {
+  display: inline-block;
+  transform: translateX(100%);
+}
+
+.menu-items a .outer,
+.menu-items a .inner {
+  /* 메뉴 아이템 Wipe animation 속도 조절 */
+  transition: transform 2s cubic-bezier(0.29, 0.33, 0.34, 1.02);
+}
+
+.menu-items a:hover .outer,
+.menu-items a:hover .inner {
+  transform: none;
+}
+
+/* ANIMATIONS */
+[data-animation='to-left'] .outer {
+  transform: translateX(100%);
+}
+
+[data-animation='to-left'] .inner {
+  transform: translateX(-100%);
+}
+
+[data-animation='to-top'] .outer {
+  transform: translateY(100%);
+}
+
+[data-animation='to-top'] .inner {
+  transform: translateY(-100%);
+}
+
+[data-animation='to-bottom'] .outer {
+  transform: translateY(-100%);
+}
+
+[data-animation='to-bottom'] .inner {
+  transform: translateY(100%);
 }

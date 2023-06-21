@@ -8,28 +8,61 @@
   </head>
   <body>
     <div class="App">
+      <!-- HEADER -->
       <div class="header_box">
-        <a href="/contact">
+        <!-- LOGO -->
+        <a href="/">
           <img src="./src/static/images/logo.svg" alt="logo" />
           <div style="font-size: 14px">Portfolio</div>
         </a>
+        <!-- HAMBURGER MENU -->
         <div id="hamburger-wrapper" class="">
           <p class="burger"></p>
         </div>
         <div class="menu">
           <ul class="menu-items">
             <!-- http://localhost:5050/ -->
-            <li><a href="/">Home</a></li>
+            <li>
+              <a href="/">
+                Home
+                <span class="outer" aria-hidden="true">
+                  <span class="inner">Home</span>
+                </span>
+              </a>
+            </li>
             <!-- http://localhost:5050/work -->
-            <li><a href="/work">Work</a></li>
+            <li data-animation="to-left">
+              <a href="/work">
+                Work
+                <span class="outer" aria-hidden="true">
+                  <span class="inner">Work</span>
+                </span>
+              </a>
+            </li>
             <!-- http://localhost:5050/contact -->
-            <li><a href="/contact">Contact</a></li>
+            <li data-animation="to-top">
+              <a href="/contact">
+                Contact
+                <span class="outer" aria-hidden="true">
+                  <span class="inner">Contact</span>
+                </span>
+              </a>
+            </li>
             <!-- http://localhost:5050/test -->
-            <li><a href="/test">Test</a></li>
+            <li data-animation="to-bottom">
+              <a href="/test">
+                Test
+                <span class="outer" aria-hidden="true">
+                  <span class="inner">Test</span>
+                </span>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
+      <!-- MAIN -->
       <div id="app"></div>
+      <!-- FOOTER -->
       <div class="footer_box">
         <a class="instagram" href="https://www.instagram.com/" target="_blank">
 
