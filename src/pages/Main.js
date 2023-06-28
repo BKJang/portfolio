@@ -118,6 +118,11 @@ function Contact($container) {
           <img src="https://cdn.pixabay.com/photo/2020/07/14/16/18/snow-5404785_960_720.jpg" alt="">
         </div>
       </div>
+      <div class="image_size_down" >
+        <div class="hidden">
+          <img src="https://cdn.pixabay.com/photo/2020/07/14/16/18/snow-5404785_960_720.jpg" alt="">
+        </div>
+      </div>
     </div>
     `;
   };

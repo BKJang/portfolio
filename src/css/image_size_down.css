@@ -1,0 +1,35 @@
+.image_size_down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 400px;
+  width: 400px;
+  left: -120px;
+  top: -70px;
+}
+
+.hidden {
+  overflow: hidden;
+  height: 400px;
+}
+
+.image_size_down img {
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+}
+
+.image_size_down img {
+  transition: all 0.2s linear;
+  position: relative;
+  left: -100px;
+  top: -100px;
+}
+
+.image_size_down div:hover img {
+  width: 400px;
+  height: 400px;
+  left: 0px;
+  top: 0px;
+}
