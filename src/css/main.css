@@ -1,4 +1,6 @@
 @import 'image_slide_ani.css';
+@import 'image_infinite.css';
+@import 'image_size_up.css';
 
 #lottie_sample {
   width: 100%;

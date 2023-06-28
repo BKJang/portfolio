@@ -1,12 +1,14 @@
 .header_box {
-  /* position: fixed; */
   display: flex;
   height: 60px;
-  width: 95%;
-  padding: 1rem 2rem 0rem 2rem;
+  padding: 1rem;
   flex-direction: row;
   justify-content: space-between;
   color: black;
+  /* width: 100%; */
+  position: fixed;
+  right: 0;
+  left: 0;
 }
 
 .header_box img {

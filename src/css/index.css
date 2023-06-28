@@ -148,3 +148,17 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+.cursor {
+  pointer-events: none;
+}
+.cursor__ball {
+  position: fixed;
+  top: 0;
+  left: 0;
+  mix-blend-mode: difference;
+  z-index: 1000;
+}
+.cursor__ball circle {
+  fill: #f7f8fa;
+}
