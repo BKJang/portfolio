@@ -1,5 +1,4 @@
 import Lottie from "../components/Lottie.js";
-import ImageRecursive from '../components/ImageRecursive.js';
 
 function Contact($container) {
   this.$container = $container;
@@ -106,7 +105,9 @@ function Contact($container) {
         </div>
       </div>
       <div class="image_infinite_container" data-aos="slide-left">
-        <img src="https://cdn.pixabay.com/photo/2020/07/14/16/18/snow-5404785_960_720.jpg" class="image_infinite"></img>
+        <img src="https://cdn.pixabay.com/photo/2020/07/14/16/18/snow-5404785_960_720.jpg" />
+        <img src="https://cdn.pixabay.com/photo/2022/08/30/15/33/nature-7421337_960_720.jpg" />
+        <img src="https://cdn.pixabay.com/photo/2018/02/21/21/30/food-3171570_1280.jpg" />
       </div>
       <div class="image_size_up" data-aos="slide-right">
         <div>
@@ -128,8 +129,6 @@ function Contact($container) {
   };
 
   this.render();
-  new ImageRecursive();
-
 }
 
 export default Contact;
