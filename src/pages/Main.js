@@ -104,22 +104,27 @@ function Contact($container) {
           />
         </div>
       </div>
-      <div class="image_infinite_container" data-aos="slide-left">
-        <img src="https://cdn.pixabay.com/photo/2020/07/14/16/18/snow-5404785_960_720.jpg" />
-        <img src="https://cdn.pixabay.com/photo/2022/08/30/15/33/nature-7421337_960_720.jpg" />
-        <img src="https://cdn.pixabay.com/photo/2018/02/21/21/30/food-3171570_1280.jpg" />
-      </div>
-      <div class="image_size_up" data-aos="slide-right">
-        <div>
-          <img src="https://cdn.pixabay.com/photo/2020/07/14/16/18/snow-5404785_960_720.jpg" alt="">
+        <div class="image_infinite_container" data-aos="slide-left">
+          <img src="https://cdn.pixabay.com/photo/2020/07/14/16/18/snow-5404785_960_720.jpg" />
+          <img src="https://cdn.pixabay.com/photo/2022/08/30/15/33/nature-7421337_960_720.jpg" />
+          <img src="https://cdn.pixabay.com/photo/2018/02/21/21/30/food-3171570_1280.jpg" />
+          <img src="https://cdn.pixabay.com/photo/2022/08/30/15/33/nature-7421337_960_720.jpg" />
+          <div>2</div>
+          <div>3</div>
         </div>
-      </div>
+      <a href="/work2">
+        <div class="image_size_up" data-aos="slide-right">
+          <div>
+            <img src="https://cdn.pixabay.com/photo/2020/07/14/16/18/snow-5404785_960_720.jpg" alt="">
+          </div>
+        </div>
+      </a>
       <div class="image_size_up" data-aos="slide-up" >
         <div class="hidden">
           <img src="https://cdn.pixabay.com/photo/2020/07/14/16/18/snow-5404785_960_720.jpg" alt="">
         </div>
       </div>
-      <div class="image_size_down" >
+      <div class="image_size_down">
         <div class="hidden">
           <img src="https://cdn.pixabay.com/photo/2020/07/14/16/18/snow-5404785_960_720.jpg" alt="">
         </div>
@@ -127,8 +132,8 @@ function Contact($container) {
     </div>
     `;
   };
-
   this.render();
+  new Lottie();
 }
 
 export default Contact;

@@ -21,3 +21,28 @@
 ### static
 
 - 정적인 리소스 (폰트나 이미지(svg, png, jpg), lottie animation에 관련된 json)
+
+## MAIN PAGE
+
+- Main.js
+- main.css
+
+## 포폴 하나를 추가하고 싶다.
+
+- pages/Work3.js 파일 만들고
+- work3.css 파일 만들어서
+- index.css
+  - @import 'work3.css';
+- constants/routeInfo.js
+  - `import Work3 from "../pages/Work3.js";`
+  - `{ path: /^\/work3$/, element: Work3 }`,
+- pages/Work.js로 가서
+  - `import Work2 from "./Work2";`
+  - `<div id="work3_box"></div>`
+  - `new Work2($('#work2_box'), true);`
+
+## AOS
+
+- 스크롤에 해당 영역이 들어왔을 때, 보여지는 방식에 대한 에니메이션을 설정
+- https://michalsnik.github.io/aos/
+- `<div class="content" data-aos="slide-left">`

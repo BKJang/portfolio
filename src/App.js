@@ -4,7 +4,6 @@ import { BASE_URL } from "./constants/routeInfo";
 import Router from "./router";
 import Header from "./components/Header.js";
 import Footer from "./components/Footer.js";
-import Lottie from './components/Lottie.js';
 import MouseCursor from './components/MouseCursor.js';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -19,14 +18,15 @@ function App($container) {
       if (!(target instanceof HTMLAnchorElement)) return;
 
       e.preventDefault();
-      const targetURL = e.target.href.replace(BASE_URL, "");
+      // TODO targetURL 변경
+      const targetURL = target.href.replace(BASE_URL, "");
+      // const targetURL = e.target.href.replace(BASE_URL, "");
       navigate(targetURL);
     });
 
     new Router($container);
     new Header();
     new Footer();
-    new Lottie();
     new MouseCursor();
     AOS.init({
       // Global settings:

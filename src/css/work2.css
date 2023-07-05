@@ -1,0 +1,84 @@
+.work1_box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work1_box .image1 {
+  background: url(https://cdn.pixabay.com/photo/2020/07/14/16/18/snow-5404785_960_720.jpg) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  /* -------- */
+
+  flex-direction: column;
+}
+
+.work1_box .image1 .introduction {
+  padding-bottom: 200px;
+}
+
+.work1_box .image1 .title {
+  justify-content: center;
+  color: #fff;
+  line-height: normal;
+  font-size: 5vw;
+  max-width: 900px;
+  margin: 80px 43px 0px 43px;
+}
+
+.work1_box .image1 .content {
+  justify-content: center;
+  color: #fff;
+  line-height: 1.5rem;
+  font-size: 1.2vw;
+  max-width: 500px;
+  margin: 20px 43px 0px 43px;
+}
+
+.work1_box .image1 .content .goback {
+  justify-content: center;
+  font-size: 16px;
+  max-width: 500px;
+  margin-top: 50px;
+}
+
+.work1_box .image1 .content .goback a {
+  color: #fff;
+}
+
+.work1_box .image2 {
+  background: url(https://cdn.pixabay.com/photo/2022/08/23/06/55/village-7405160_960_720.jpg) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.work1_box .image3 {
+  background: url(https://cdn.pixabay.com/photo/2022/08/30/15/33/nature-7421337_960_720.jpg) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1050px) {
+  .work1_box .image1 .introduction {
+    margin-left: 200px;
+  }
+  .work1_box .image1 .content {
+    font-size: 16px;
+  }
+  .work1_box .image1 .title {
+    font-size: 60px;
+  }
+}
