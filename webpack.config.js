@@ -47,12 +47,22 @@ module.exports = (_, argv) => {
             },
           ],
         },
+        {
+          test: /\.svg$/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: 'src/static/images/[name].[ext]'
+              }
+            },
+          ],
+        },
       ],
     },
     plugins: [
-      new HtmlWebpackPlugin({ template: './index.html' }), //
+      new HtmlWebpackPlugin({ template: './index.html' }),
       new MiniCssExtractPlugin({ filename: 'style.css' }),
     ],
-
   };
 };
