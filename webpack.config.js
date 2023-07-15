@@ -53,8 +53,6 @@ module.exports = (_, argv) => {
       new HtmlWebpackPlugin({ template: './index.html' }), //
       new MiniCssExtractPlugin({ filename: 'style.css' }),
     ],
-    performance: {
-      hints: isDevelopment ? 'warning' : 'error',
-    },
+
   };
 };
